@@ -1,0 +1,14 @@
+s='aTGcc'
+p='cc'
+print(s.upper())  #ATGCC делает все большими
+print(s.lower())  #atgcc делает все маленькими
+print(s.count(p)) #1  подсчитывает сколько раз p входит в s
+print(s.find(p))  #3 показывает в с какой позиции входит p в s
+
+if 'TG' in s:     #проверяем входит ли TG в строку
+    print("строка входит")
+
+s.replace('c','C') #заменит с на С но при этом s останется неизменной, выдает результат в return
+
+s='agTtcAGtc'
+print(s.upper().count('gt'.upper()))
