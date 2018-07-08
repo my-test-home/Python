@@ -1,0 +1,19 @@
+# обращаемся из класса 2 к функциям класс 1
+class myclass:
+    def __init__(self):
+        self.x=10
+        print("ghgh")
+    def print_x(self):
+        print(self.x)
+
+class class2(myclass):
+    def fun1(self):
+        self.print_x()
+
+c=class2()
+
+c.fun1()
+
+
+print(hasattr(c,"print_x"))
+
